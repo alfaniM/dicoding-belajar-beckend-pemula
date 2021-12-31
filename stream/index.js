@@ -14,7 +14,7 @@ const writableStream = fs.createWriteStream(resolve(__dirname, "output.txt"));
 
 readableStream.on("readable", () => {
   try {
-    writableStream.write(`$readableStream.read()}\n`);
+    writableStream.write(`${readableStream.read()}\n`);
   } catch (error) {}
 });
 
